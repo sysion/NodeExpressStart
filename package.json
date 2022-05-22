@@ -1,0 +1,38 @@
+{
+  "name": "node-express-start",
+  "version": "1.0.0",
+  "description": "starter app for learning node.js+express backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "DEBUG=node-express-start:* nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sysionng/Node-Express-Starter.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "sysionng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sysionng/Node-Express-Starter/issues"
+  },
+  "homepage": "https://github.com/sysionng/Node-Express-Starter#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "helmet": "^5.1.0",
+    "socket.io": "^4.5.1",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^2.0.16"
+  }
+}
