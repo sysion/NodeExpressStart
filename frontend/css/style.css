@@ -1,0 +1,94 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	width: 100%;                    						/* 100% width of parent (root) element */
+  height: 100vh;                              /* 100% height of viewport */
+  background: rgba(0, 0, 0, 0.1);             /* 10% black */
+	font-family: arial, verdana, sans-serif, tahoma, helvetica, courier;
+	font-size: 62.5%;														/* our root font size - 10px */
+	/*font-size: 1em;                             * our root font size - 16px */
+}
+
+body{
+	font-size: 1.8rem;
+	color: rgba(23, 23, 23, 0.65);
+}
+
+a{
+	text-decoration: none;
+}
+
+/* h1 style in normalize.css */
+
+h2{                                         
+  font-size: 1.25rem;
+}
+
+h3{                                          
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+h4{                                         
+  font-weight: normal;
+  padding: 0.5rem;
+}
+
+p{                                                
+  padding: 0.5rem;
+}
+
+.wrapper{
+	width: 98%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+header{
+	width: 100%;
+	height: 4rem;
+	background-color: #938303;
+}
+
+header a{
+	margin: 1rem;
+}
+
+header ul{
+	width: 100%;
+	height: 4rem;				/* why is height: 100%; not working in this case? */
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main {
+  /*padding: 3rem;*/
+  min-height: calc(100vh - 100px); /* header=40px, footer=40px, .wrapper padding-top=10px, .wrapper padding-bottom=10px => total=100px*/
+}
+
+
+footer{
+	width: 100%;
+	height: 4rem;
+	background-color: #938303;
+	text-align: center;
+	line-height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+

@@ -2,10 +2,10 @@
   "name": "node-express-start",
   "version": "1.0.0",
   "description": "starter app for learning node.js+express backend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "DEBUG=node-express-start:* nodemon ./bin/www",
+    "start": "node server.js",
+    "devstart": "DEBUG=node-express-start/backend:* nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
