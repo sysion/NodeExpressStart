@@ -49,13 +49,21 @@ app.get('/api/houses/:id', function(req, res){
   res.send(house);
 });
 
+// images, css and html files are STATIC files hence pass express.static to app.use
+//app.use(express.static(path.join(__dirname,'./db/images')));    //images served at url http://127.0.0.1:8042/house-05.jpg
+//app.use(express.static(path.join(__dirname,'./')));   //images served at url http://127.0.0.1:8042/db/images/house-05.jpg
+app.use(express.static(__dirname));                   //images served at url http://127.0.0.1:8042/db/images/house-05.jpg
+
+//error => Cannot GET /db/images/house-05.jpg
 app.get('/images/:name', function(req, res){
   res.type('application/blob');
   const name = req.params.name;     // get name from the URL
-  res.send('http://127.0.0.1:8042/db/images/' + name);
+  //res.send('http://127.0.0.1:8042/db/images/' + name);        //nok
+  //res.sendFile(path.join(__dirname, './db/images' + name));   //nok
+  res.sendFile(path.join(__dirname, name));
+  //res.sendFile(path.join(__dirname, './' + name));            //nok
 
-
-  /*/ Searching books for the isbn
+  /* Searching books for the isbn
   for (let book of books) {
     if (book.isbn === isbn) {
       res.json(book);
@@ -65,6 +73,18 @@ app.get('/images/:name', function(req, res){
 
   // Sending 404 when not found something is a good practice
   res.status(404).send('Book not found');*/
+});
+
+app.get('/api/house/:code', function(req, res){
+  res.type('application/json');
+  const code = req.params.code;     // get code from the URL
+  
+  db.forEach((house) => {
+    if (house.code === code) {
+      res.send(house);
+      return;
+    }
+  });
 });
 
 server.listen(port, function(){

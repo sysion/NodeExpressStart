@@ -82,19 +82,19 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 1rem;
 }
 
 .house{
-	width: 20rem;
-	height: 20rem;
-	margin: 0.2rem;
+	width: 30rem;
+	margin: 0.5rem;
 	/*box-shadow: ;*/
+	text-align: center;
 }
 
 .house img{
-	width: 10rem;
-	height: 10rem;
-	margin: 0 auto;
+	width: 20rem;
+	height: 20rem;
 }
 
 footer{

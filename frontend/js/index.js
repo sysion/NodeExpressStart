@@ -40,9 +40,9 @@ async function renderViewAll(){
 
 		houses.forEach((house) => {
 			let house_html =`<div class='house'> 
-								<h1>${house.address}</h1>
-								<h2>${house.agent} <span>: ${house.code}</span></h2>
 								<img src=${house.url} alt=${house.code} />
+								<h2><span>House Agent: </span>${house.agent}</h2>
+								<h1>${house.address}</h1>
 							</div>`;
 
 			html += house_html;
@@ -56,7 +56,7 @@ async function renderViewAll(){
 
 async function renderView(id){
 	try {
-		let house = await getHouses(id);
+		let house = await getHouse(id);
 		
 		let html =`<div class='house'> 
 						<h1>${house.address}</h1>
