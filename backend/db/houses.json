@@ -3,12 +3,12 @@
 "code":"house-01",
 "address":"Plot 124, Awosika Avenue, Ikoy, Lagos",
 "agent":"Peju Adams",
-"url":"https://127.0.0.1:8042/db/images/house-01.jpg",
+"url":"http://127.0.0.1:8042/db/images/house-01.jpg",
 "details":{
-	"url-01":"https://127.0.0.1:8042/db/images/1/house-01.jpg",
-	"url-02":"https://127.0.0.1:8042/db/images/1/house-02.jpg",
-	"url-03":"https://127.0.0.1:8042/db/images/1/house-03.jpg",
-	"url-04":"https://127.0.0.1:8042/db/images/1/house-04.jpg"
+	"url-01":"http://127.0.0.1:8042/db/images/1/house-01.jpg",
+	"url-02":"http://127.0.0.1:8042/db/images/1/house-02.jpg",
+	"url-03":"http://127.0.0.1:8042/db/images/1/house-03.jpg",
+	"url-04":"http://127.0.0.1:8042/db/images/1/house-04.jpg"
 }
 },
 {
@@ -16,12 +16,12 @@
 "code":"house-02",
 "address":"34, Pedro Street, Shomolu, Bariga, Lagos",
 "agent":"Dada Umoh",
-"url":"https://127.0.0.1:8042/db/images/house-02.jpg",
+"url":"http://127.0.0.1:8042/db/images/house-02.jpg",
 "details":{
-	"url-01":"https://127.0.0.1:8042/db/images/2/house-01.jpg",
-	"url-02":"https://127.0.0.1:8042/db/images/2/house-02.jpg",
-	"url-03":"https://127.0.0.1:8042/db/images/2/house-03.jpg",
-	"url-04":"https://127.0.0.1:8042/db/images/2/house-04.jpg"
+	"url-01":"http://127.0.0.1:8042/db/images/2/house-01.jpg",
+	"url-02":"http://127.0.0.1:8042/db/images/2/house-02.jpg",
+	"url-03":"http://127.0.0.1:8042/db/images/2/house-03.jpg",
+	"url-04":"http://127.0.0.1:8042/db/images/2/house-04.jpg"
 }
 },
 {
@@ -29,12 +29,12 @@
 "code":"house-03",
 "address":"62, Muyibi Street, Wilmar, Apapa, Lagos",
 "agent":"Adisa Saheed",
-"url":"https://127.0.0.1:8042/db/images/house-03.jpg",
+"url":"http://127.0.0.1:8042/db/images/house-03.jpg",
 "details":{
-	"url-01":"https://127.0.0.1:8042/db/images/3/house-01.jpg",
-	"url-02":"https://127.0.0.1:8042/db/images/3/house-02.jpg",
-	"url-03":"https://127.0.0.1:8042/db/images/3/house-03.jpg",
-	"url-04":"https://127.0.0.1:8042/db/images/3/house-04.jpg"
+	"url-01":"http://127.0.0.1:8042/db/images/3/house-01.jpg",
+	"url-02":"http://127.0.0.1:8042/db/images/3/house-02.jpg",
+	"url-03":"http://127.0.0.1:8042/db/images/3/house-03.jpg",
+	"url-04":"http://127.0.0.1:8042/db/images/3/house-04.jpg"
 }
 },
 {
@@ -42,12 +42,12 @@
 "code":"house-04",
 "address":"17, Innocent Sagene Street, GRA, Port Harcourt",
 "agent":"Smart Tamunosusu",
-"url":"https://127.0.0.1:8042/db/images/house-04.jpg",
+"url":"http://127.0.0.1:8042/db/images/house-04.jpg",
 "details":{
-	"url-01":"https://127.0.0.1:8042/db/images/4/house-01.jpg",
-	"url-02":"https://127.0.0.1:8042/db/images/4/house-02.jpg",
-	"url-03":"https://127.0.0.1:8042/db/images/4/house-03.jpg",
-	"url-04":"https://127.0.0.1:8042/db/images/4/house-04.jpg"
+	"url-01":"http://127.0.0.1:8042/db/images/4/house-01.jpg",
+	"url-02":"http://127.0.0.1:8042/db/images/4/house-02.jpg",
+	"url-03":"http://127.0.0.1:8042/db/images/4/house-03.jpg",
+	"url-04":"http://127.0.0.1:8042/db/images/4/house-04.jpg"
 }
 },
 {
@@ -55,61 +55,61 @@
 "code":"house-05",
 "address":"House 2b, Plot 8, Kareem Road, Satellite Town, Lagos",
 "agent":"Ugochukwu Johnson",
-"url":"https://127.0.0.1:8042/db/images/house-05.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-05.jpg"
 },
 {
 "id":6,
 "code":"house-06",
 "address":"59 Ali Giwa Road, Sabo, Kaduna",
 "agent":"Tanko Al-Hassan",
-"url":"https://127.0.0.1:8042/db/images/house-06.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-06.jpg"
 },
 {
 "id":7,
 "code":"house-07",
 "address":"House 2, Road 101, Azikiwe Estate, Aba, Abia",
 "agent":"Okorie Nwachukwu",
-"url":"https://127.0.0.1:8042/db/images/house-07.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-07.jpg"
 },
 {
 "id":8,
 "code":"house-08",
 "address":"Suite 29, Eko Court, Obalende, Lagos",
 "agent":"Abraham Doherty",
-"url":"https://127.0.0.1:8042/db/images/house-08.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-08.jpg"
 },
 {
 "id":9,
 "code":"house-09",
 "address":"6, Ifeanyi Street, Ikate, Surulere, Lagos",
 "agent":"Samaila Umar",
-"url":"https://127.0.0.1:8042/db/images/house-09.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-09.jpg"
 },
 {
 "id":10,
 "code":"house-10",
 "address":"House 5, Block 24, 202 Road, Festac Town, Lagos",
 "agent":"Effiong Emmanuel",
-"url":"https://127.0.0.1:8042/db/images/house-10.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-10.jpg"
 },
 {
 "id":11,
 "code":"house-11",
 "address":"31, Ajunwa Street, Ogudu GRA, Ojota, Lagos",
 "agent":"Lamido Adamu",
-"url":"https://127.0.0.1:8042/db/images/house-11.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-11.jpg"
 },
 {
 "id":12,
 "code":"house-12",
 "address":"House 48, Muhammadu Buhari Estate, Lagos-Abeokuta Road, Abeokuta",
 "agent":"Akande Amosun",
-"url":"https://127.0.0.1:8042/db/images/house-12.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-12.jpg"
 },
 {
 "id":13,
 "code":"house-13",
 "address":"5, Ikemba Street, Nnewi Paradise Estate, Nnewi, Anambra",
 "agent":"Ekene Davidson",
-"url":"https://127.0.0.1:8042/db/images/house-13.jpg"
+"url":"http://127.0.0.1:8042/db/images/house-13.jpg"
 }]
