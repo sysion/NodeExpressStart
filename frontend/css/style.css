@@ -64,31 +64,60 @@ header a{
 }
 
 header ul{
-	width: 100%;
+	/*width: 100%;*/
 	height: 4rem;				/* why is height: 100%; not working in this case? */
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	font-size: 1.8rem;
+	margin-right: 1.5rem;
 }
 
+header li{
+	width: 10rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/*
 main {
-	width: 100%;
-  min-height: calc(100vh - 100px); /* header=40px, footer=40px, .wrapper padding-top=10px, .wrapper padding-bottom=10px => total=100px*/
+	width: 95%;
+  min-height: calc(100vh - 100px); * header=40px, footer=40px, .wrapper padding-top=10px, .wrapper padding-bottom=10px => total=100px*
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .house{
-	width: 30rem;
+	width: 25rem;
 	margin: 0.5rem;
-	/*box-shadow: ;*/
+	*box-shadow: ;*
+	text-align: center;
+}
+*/
+
+main {
+	width: 95%;
+  min-height: calc(100vh - 100px); /* header=40px, footer=40px, .wrapper padding-top=10px, .wrapper padding-bottom=10px => total=100px*/
+  display: grid;
+  grid-template-columns: repeat(5, minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.house{
+	/*width: 25rem;
+	margin: 0.5rem;
+	box-shadow: ;*/
 	text-align: center;
 }
 
@@ -108,6 +137,59 @@ footer{
 
 
 
+
+@media screen and (min-width: 481px){
+	.feedbacks{
+		grid-template-columns: repeat(2, minmax(20rem, 1fr));
+	}
+}
+
+@media screen and (min-width: 768px){
+	.mobile-menu{
+		display: none;
+	}
+
+	nav ul{
+		position: static;
+		display: flex;
+		flex-direction: row;
+		background: none;
+	}
+
+	nav li{
+		
+	}
+
+	nav li:hover{
+		
+	}
+
+	nav a{
+		color: #ffffff;
+	}
+
+	.header-bottom{
+		flex-direction: row;
+	}
+
+	.promo{
+		width: 30%;
+	}
+
+	.promo-image{
+		width: 50%;
+	}
+
+	.feedbacks{
+		grid-template-columns: repeat(3, minmax(20rem, 1fr));
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.feedbacks{
+		grid-template-columns: repeat(4, minmax(20rem, 1fr));
+	}
+}
 
 
 

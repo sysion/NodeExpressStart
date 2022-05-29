@@ -40,7 +40,7 @@ async function renderViewAll(){
 
 		houses.forEach((house) => {
 			let house_html =`<div class='house'> 
-								<img src=${house.url} alt=${house.code} />
+								<a href="#"><img src=${house.url} alt=${house.code} /></a>
 								<h2><span>House Agent: </span>${house.agent}</h2>
 								<h1>${house.address}</h1>
 							</div>`;
