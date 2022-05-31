@@ -88,9 +88,9 @@ async function renderViewAll(){
 
 		houses.forEach((house) => {
 			let house_html =`<div class='house'> 
-								<a href="#"><img src=${house.url} alt=${house.code} /></a>
+								<a href="#"><img src=${house.url} width=100px height=100px alt=${house.code} /></a>
 								<h2><span>House Agent: </span>${house.agent}</h2>
-								<h1>${house.address}</h1>
+								<h3>${house.address}</h3>
 							</div>`;
 
 			html += house_html;
@@ -119,10 +119,10 @@ async function renderView(id){
 }
 
 
-function init(){
+function initPage(){
 	renderViewAll();
 	menuHandler();
 }
 
 //window.addEventListener('DOMContentLoaded', renderViewAll);
-window.addEventListener('DOMContentLoaded', init);
+window.addEventListener('DOMContentLoaded', initPage);
