@@ -58,10 +58,17 @@ header{
 	height: 4rem;
 	background-color: #938303;
 
-	display: flex;
+	
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+	-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo{
@@ -138,11 +145,21 @@ nav ul{
 	/*width: 100%;*/
 	/*height: 4rem;				* why is height: 100%; not working in this case? */
 	list-style: none;
-	display: flex;
-	flex-direction: column;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+	-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 	font-size: 1.8rem;
 	margin-right: 1.5rem;
 	z-index: 99;
@@ -254,17 +271,24 @@ footer{
 		display: flex;
 	}*/
 
-	nav ul{
+	/*nav ul{
 		position: static;
-		display: flex;
+		*display: -webkit-box;
+  	display: -ms-flexbox;*
+  	display: flex;
 		flex-direction: row;
 		background: none;
 		height: 4rem;
-	}
+	}*/
 
 	nav ul{
 		position: static;
+		display: -webkit-box;
+  	display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
 		flex-direction: row;
 		background: none;
 	}

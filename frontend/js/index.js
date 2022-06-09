@@ -10,7 +10,7 @@ mobile_menu.addEventListener('click', (event) => {
 			ul_menu.classList.add('show-menu');
 			setTimeout(()=>{
 				ul_menu.classList.remove('hide-menu');
-			}, 20);
+			}, 500);
 		}, 20);
 	}
 	else if (window.getComputedStyle(ul_menu).display === 'flex'){
@@ -24,30 +24,36 @@ mobile_menu.addEventListener('click', (event) => {
 	}
 });
 
-window.addEventListener('deviceorientation', (event) => {
+/*window.addEventListener('deviceorientation', (event) => {
 	window.location.reload();
 });
 
 window.addEventListener('orientationchange', (event) => {
 	window.location.reload();
-});
+});*/
 
 let menuHandler = ()=>{
 	if (window.getComputedStyle(mobile_menu).display === 'block'){
-		if (! ul_menu.classList.contains('remove-menu')){
-			ul_menu.classList.add('remove-menu');
-			ul_menu.classList.add('hide-menu');
-			ul_menu.classList.remove('show-menu');
-		}
+		ul_menu.classList.add('remove-menu');
+		ul_menu.classList.add('hide-menu');
+		ul_menu.classList.remove('show-menu');
 	}
 	else{
-		if (ul_menu.classList.contains('remove-menu')){
-			ul_menu.classList.remove('remove-menu');
-			ul_menu.classList.remove('hide-menu');
-			ul_menu.classList.add('show-menu');
-		}
+		ul_menu.classList.remove('remove-menu');
+		ul_menu.classList.remove('hide-menu');
+		ul_menu.classList.add('show-menu');
 	}
 };
+
+screen.orientation.addEventListener('change', (event) => {
+	/*if (window.getComputedStyle(mobile_menu).display === 'block'){
+		menuHandler();
+		window.location.reload();
+	}*/
+
+	menuHandler();
+	window.location.reload();
+});
 
 async function getHouses(){
 	try {
