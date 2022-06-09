@@ -24,14 +24,6 @@ mobile_menu.addEventListener('click', (event) => {
 	}
 });
 
-/*window.addEventListener('deviceorientation', (event) => {
-	window.location.reload();
-});
-
-window.addEventListener('orientationchange', (event) => {
-	window.location.reload();
-});*/
-
 let menuHandler = ()=>{
 	if (window.getComputedStyle(mobile_menu).display === 'block'){
 		ul_menu.classList.add('remove-menu');
@@ -46,11 +38,6 @@ let menuHandler = ()=>{
 };
 
 screen.orientation.addEventListener('change', (event) => {
-	/*if (window.getComputedStyle(mobile_menu).display === 'block'){
-		menuHandler();
-		window.location.reload();
-	}*/
-
 	menuHandler();
 	window.location.reload();
 });
@@ -66,7 +53,6 @@ async function getHouses(){
 
 		return await response.json();
 	} catch(e) {
-		//console.log('getHouses:', e);
 		console.log(e);
 	}
 }
@@ -82,7 +68,6 @@ async function getHouse(id){
 
 		return await response.json();
 	} catch(e) {
-		//console.log('getHouses:', e);
 		console.log(e);
 	}
 }
@@ -130,5 +115,4 @@ function initPage(){
 	menuHandler();
 }
 
-//window.addEventListener('DOMContentLoaded', renderViewAll);
 window.addEventListener('DOMContentLoaded', initPage);

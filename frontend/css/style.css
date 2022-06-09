@@ -10,7 +10,6 @@ html{
   background: rgba(0, 0, 0, 0.1);             /* 10% black */
 	font-family: arial, verdana, sans-serif, tahoma, helvetica, courier;
 	font-size: 62.5%;														/* our root font size - 10px */
-	/*font-size: 1em;                             * our root font size - 16px */
 }
 
 body{
@@ -72,7 +71,6 @@ header{
 }
 
 .logo{
-	/*width: 3rem;*/
 	height: 3rem;
 	margin-left: 2rem;
 	line-height: 3rem;
@@ -93,7 +91,6 @@ header{
 .logo span{
 	font-size: 1.8rem;
 	font-weight: bold;
-	/*line-height: 3rem;*/
 	position: absolute;
 	top: -2rem;        /* why -2rem??? */
 	left: 3.5rem;
@@ -103,30 +100,15 @@ header{
 .hide-menu{
 	transition: all 0.5s linear;
 	transform: translateY(-150%);
-	/*transform: translateX(150%);*/
 }
 
 .show-menu{
 	transform: translateY(0);
-	/*transform: translateX(0);*/
 }
 
 .remove-menu{
 	display: none;
 }
-
-/*nav ul{
-	position: absolute;
-	top: 5rem;
-	right: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 99;
-	background: rgba(255, 255, 255, 0.8);
-}
-*/
 
 .mobile-menu{
 	font-size: 2rem;
@@ -142,8 +124,6 @@ nav ul{
 	position: absolute;
 	top: 5.5rem;
 	right: 0;
-	/*width: 100%;*/
-	/*height: 4rem;				* why is height: 100%; not working in this case? */
 	list-style: none;
 	display: -webkit-box;
   display: -ms-flexbox;
@@ -166,12 +146,6 @@ nav ul{
 	background-color: #938303;
 }
 
-/*nav li{
-	width: 10rem;
-	text-align: center;
-	text-transform: capitalize;
-}*/
-
 nav li{
 	width: 12rem;
 	height: 4rem;
@@ -185,41 +159,12 @@ nav li:hover{
 	background: rgba(0, 0, 0, 0.8);
 }
 
-/*nav li a{
-	width: 100%;
-	height: 3rem;
-	margin: 1rem;
-	color: #ffffff;
-	font-weight: bold;
-}*/
-
 nav li a{
 	width: 100%;
 	height: 100%;
 	color: #ffffff;
 	font-weight: bold;
 }
-
-/*
-main {
-	width: 95%;
-  min-height: calc(100vh - 100px); * header=40px, footer=40px, .wrapper padding-top=10px, .wrapper padding-bottom=10px => total=100px*
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.house{
-	width: 25rem;
-	margin: 0.5rem;
-	*box-shadow: ;*
-	text-align: center;
-}
-*/
 
 main {
 	width: 95%;
@@ -233,9 +178,6 @@ main {
 }
 
 .house{
-	/*width: 25rem;
-	margin: 0.5rem;
-	box-shadow: ;*/
 	text-align: center;
 }
 
@@ -254,8 +196,6 @@ footer{
 }
 
 
-
-
 @media screen and (min-width: 481px){
 	main{
 		grid-template-columns: repeat(2, minmax(20rem, 1fr));
@@ -266,20 +206,6 @@ footer{
 	.mobile-menu{
 		display: none;
 	}
-
-	/*nav ul{
-		display: flex;
-	}*/
-
-	/*nav ul{
-		position: static;
-		*display: -webkit-box;
-  	display: -ms-flexbox;*
-  	display: flex;
-		flex-direction: row;
-		background: none;
-		height: 4rem;
-	}*/
 
 	nav ul{
 		position: static;
@@ -298,11 +224,6 @@ footer{
 		height: 100%;
 		margin: 0 1rem;
 	}
-
-	/*nav li:hover{
-		border-bottom: 0.2rem solid #ffffff;
-		background: none;
-	}*/
 
 	nav a{
 		color: #ffffff;

@@ -9,7 +9,7 @@ Simple full stack app development using JENCH (Javascript, Express, Node, CSS, H
 
 Frontend is built using html, css, javascript while the backend is built with node.js
 
-The data is provided in a json file to simulate a database and this served by the
+The data is provided in a json file to simulate a database and this is served by the
 backend to our frontend client.
 
 Backend is hosted on Heroku while frontend is on Netlify.
@@ -20,4 +20,4 @@ In backend folder, enter below command:
 	DEBUG=node-express-start/backend:* nodemon ./bin/www -> development
 when the backend server is running, change to the frontend folder and
 enter the command below:
-	live-server --browser=firefox   (or with option --browser=chrome if you prefer google-chrome browser)
+live-server --browser=firefox   (or with option --browser=chrome if you prefer google-chrome browser)
