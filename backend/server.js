@@ -64,5 +64,5 @@ app.get('/api/house/:code', function(req, res){
 });
 
 server.listen(port, function(){
-  console.log('server running on http://localhost:' + port);
+  console.log('server running on port: ' + port);
 });
