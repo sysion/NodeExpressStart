@@ -1,4 +1,4 @@
-const api_origin = 'https://nodeexpressstart.herokuapp.com:8042';
+const api_origin = 'https://nodeexpressstart.herokuapp.com/';
 const main = document.getElementById('content');
 const mobile_menu = document.querySelector('.mobile-menu');
 const ul_menu = document.querySelector('nav ul');
