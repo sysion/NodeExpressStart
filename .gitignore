@@ -1,5 +1,6 @@
 backend/node_modules/
 backend/js/
+backend/db/houses_orig.json
 frontend/css/style-nes-frontend.css
 frontend/css/fontawesome-all.min.css
 frontend/images/agenta2.png
