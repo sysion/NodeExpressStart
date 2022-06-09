@@ -19,9 +19,11 @@ const limiter = rateLimit({
   max: 100 // limit each IP to 100 requests per windowMs
 });
 
-app.use(cors({
+/*app.use(cors({
     origin: 'http://127.0.0.1:8080'
-}));
+}));*/
+
+app.use(cors());
 
 app.get('/api/houses', function(req, res){
   //res.send('hi yaa');   //testing ok
