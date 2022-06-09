@@ -78,6 +78,7 @@ async function renderViewAll(){
 		let html = '';
 
 		houses.forEach((house) => {
+			console.log(house.url);
 			let house_html =`<div class='house'> 
 								<a href="#"><img src=${house.url} width=100px height=100px alt=${house.code} /></a>
 								<h2><span>House Agent: </span>${house.agent}</h2>
